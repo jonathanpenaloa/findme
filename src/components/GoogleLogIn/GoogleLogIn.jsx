@@ -1,8 +1,5 @@
 import React from 'react'
 import { GoogleLogin } from 'react-google-login'
-// import dotenv  from "react-dotenv";
-// dotenv.config();
-// dotenv({path: '.env'})
 
 
 function GoogleLogIn() {

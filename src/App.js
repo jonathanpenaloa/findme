@@ -8,10 +8,10 @@ function App() {
 
    
   useEffect(() => {
-    let clientId = ""
+    let clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID
     const start = () => {
       gapi.client.init({
-        clientId: clientId,
+        client_Id: clientId,
         scope: ""
       })
     };
