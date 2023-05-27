@@ -1,22 +1,25 @@
 import React from 'react'
 import { GoogleLogout } from 'react-google-login'
-// import  dotenv   from "react-dotenv";
-// dotenv({path: '.env'})
 
 function googleLogout() {
 
-    const onSuccess = () => {
+    const logoutSuccess = () => {
         console.log("Log out successfull!")
     }
 
-    let clientId = ""
+    const logoutFailure = (res) => {
+      console.log(res)
+    }
+
+  
   return (
     <div id="signOutButton">
     <GoogleLogout 
       sandbox="allow-same-origin"
-      clientId={clientId}
+      clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
       buttonText='Logout'
-      onSuccess={onSuccess}
+      onLogoutSuccess={logoutSuccess}
+      onFailure={logoutFailure}
      />
   </div>
   );

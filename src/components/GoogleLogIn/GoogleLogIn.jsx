@@ -13,14 +13,13 @@ function GoogleLogIn() {
     const onFailure = (res) => {
         console.log("Sign in Failure", res);
     }
-     
-    let clientId = ""
 
+   
   return (
     <div id="signInButton">
         <GoogleLogin
             sandbox="allow-same-origin"
-            clientId={clientId}
+            clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
             buttonText='Login'
             onSuccess={onSuccess}
             onFailure={onFailure}
