@@ -1,12 +1,16 @@
 import React from 'react'
 import { GoogleLogin } from 'react-google-login'
+import { useNavigate } from "react-router-dom";
 
 
 function GoogleLogIn() {
 
+    const navigate = useNavigate()
+
     const onSuccess = (res) => {
-        console.log("LOGIN SUCCESS! Current user:", res.profileObj);
+        navigate("/")
     }
+
     const onFailure = (res) => {
         console.log("Sign in Failure", res);
     }

@@ -1,16 +1,18 @@
 import React from 'react'
-import { GoogleLogout } from 'react-google-login'
+import { GoogleLogout } from 'react-google-login'    
+import { useNavigate as Navigate } from 'react-router-dom'
 
 function googleLogout() {
-
-    const logoutSuccess = () => {
-        console.log("Log out successfull!")
-    }
-
-    const logoutFailure = (res) => {
-      console.log(res)
-    }
-
+  
+  const navigate = Navigate()
+  const logoutSuccess = () => {
+    navigate('/login');
+  }
+  
+  const logoutFailure = (res) => {
+    console.log(res)
+  }
+  
   
   return (
     <div id="signOutButton">

@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       {/* <LoginButton /> */}
-      {/* <LogoutButton /> */}
+      <LogoutButton />
       <NavBar/>
         <Routes>
           <Route path='/' element={<DashBoard/> }/>
