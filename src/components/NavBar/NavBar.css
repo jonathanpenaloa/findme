@@ -1,5 +1,22 @@
 .nav-bar {
-    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 100vw;
+    padding: 5px;
     height: 35px;
     background-color: #212121;
 }
+
+.nav-bar a {
+    height: 100%;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-bar img {
+    border-radius: 50%;
+    border: 1px solid aliceblue;
+}
+

@@ -3,8 +3,11 @@ import { useEffect } from 'react';
 import { gapi } from 'gapi-script';
 import LoginButton from "./components/GoogleLogIn/GoogleLogIn"
 import LogoutButton from "./components/GoogleLogout/GoogleLogout"
-import DashBoard from './pages/DashDoard/DashBoard';
 import NavBar from './components/NavBar/NavBar';
+import DashBoard from './pages/DashDoard/DashBoard';
+import About from "./pages/About/About.jsx"
+import { Routes, Route } from "react-router-dom"; 
+import LogIn from './pages/LogIn/LogIn';
 
 function App() {
    
@@ -25,7 +28,12 @@ function App() {
       {/* <LoginButton /> */}
       {/* <LogoutButton /> */}
       <NavBar/>
-      <DashBoard />
+        <Routes>
+          <Route path='/' element={<DashBoard/> }/>
+          <Route path='/Book' />
+          <Route path='/About' element={<About />}/>
+          <Route path='/Login' element={<LogIn/>}/>
+        </Routes>
     </div>
   )
 }

@@ -1,0 +1,18 @@
+#form-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#form-section img {
+    border-radius: 50%;
+    height: 300px;
+    max-width: 300px;
+    border: 2px solid;
+}
