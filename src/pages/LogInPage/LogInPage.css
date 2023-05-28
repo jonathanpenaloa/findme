@@ -1,0 +1,83 @@
+#form-section {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+}
+
+#form-section img {
+    border-radius: 50%;
+    height: 300px;
+    max-width: 300px;
+    border: 2px solid;
+}
+
+#right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 300px;
+    height: 250px;
+    background-color: #303030;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form > input {
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #f0ae05;
+    height: 30px;
+}
+
+form > button {
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+}
+
+form > button:hover {
+    background-color: #f0ae05;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+button {
+    height: fit-content;
+    width: 150px;
+    border-radius: 12px;
+}
+
+button svg {
+    height: fit-content;
+    padding: 10;
+    margin: 0;
+}
+
+@media only screen and (max-width: 500px)  {
+    #form-section {
+        display: flex;
+        flex-direction: column;
+        gap: .5px;
+    }
+
+    #form-section img {
+        border-radius: 50%;
+        height: 150px;
+        max-width: 150px;
+    }
+}
