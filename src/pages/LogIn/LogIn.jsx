@@ -4,7 +4,7 @@ import { GoogleLogin } from "react-google-login";
 function LogIn() {
   return (
       <div>
-        <h1>Normal Log in</h1>
+        <h1>Normal logIn page</h1>
       </div>
   )
 }

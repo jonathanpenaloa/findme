@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import { gapi } from 'gapi-script';
 import LoginButton from "./components/GoogleLogIn/GoogleLogIn"
 import LogoutButton from "./components/GoogleLogout/GoogleLogout"
+import DashBoard from './pages/DashDoard/DashBoard';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
-
    
   useEffect(() => {
     let clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID
@@ -21,8 +22,10 @@ function App() {
 
   return (
     <div className="App">
-      <LoginButton />
-      <LogoutButton />
+      {/* <LoginButton /> */}
+      {/* <LogoutButton /> */}
+      <NavBar/>
+      <DashBoard />
     </div>
   )
 }

@@ -1,10 +1,14 @@
 import React from "react";
-
-import React from 'react'
+import "./DashBoard.css"
+import UserSchedule from "../../components/UserSchedule/UserSchedule";
+import QuickBook from "../../components/QuickBook/QuickBook";
 
 const DashBoard = () => {
   return (
-    <div>DashBoard</div>
+    <div className="dashboard">
+      <UserSchedule />
+      <QuickBook />
+    </div>
   );
 }
 
