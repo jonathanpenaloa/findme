@@ -1,8 +1,9 @@
 import React from 'react'
+import "./UserSchedule.css"
 
 function UserSchedule() {
   return (
-    <div>UserSchedule</div>
+    <div id='user-schedule'>UserSchedule</div>
   )
 }
 

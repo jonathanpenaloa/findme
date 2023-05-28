@@ -1,5 +1,5 @@
 .dashboard {
-    background-color: aliceblue;
+    background-color: #8ecccc;
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(3, 1fr);
@@ -10,4 +10,5 @@
 
 #quick-book {
   grid-area: 1 / 2 / 2 / 4;
+  background-color: #3a4042;
 }
