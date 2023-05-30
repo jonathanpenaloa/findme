@@ -8,6 +8,7 @@ function GoogleLogIn() {
     const navigate = useNavigate()
 
     const onSuccess = (res) => {
+        console.log(res)
         navigate("/")
     }
 

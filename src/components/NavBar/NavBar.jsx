@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function NavBar() {
   return (
     <div className='nav-bar'>
-        <img src="https://lh3.googleusercontent.com/a/AAcHTtcTaGtGkAO1hw_hIhvaBsElgXCMUsdOsHn2RHTX=s96-c" alt="" />
+        <img src="https://lh3.googleusercontent.com/a/AAcHTtcTaGtGkAO1hw_hIhvaBsElgXCMUsdOsHn2RHTX=s96-c" alt="img" />
         {/* Book link is going to be conditionaly render  */}
         <Link to="/Book">Book</Link>
         <div >
