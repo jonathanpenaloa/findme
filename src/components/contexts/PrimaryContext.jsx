@@ -1,5 +1,6 @@
 import { useState, createContext } from "react"
 import {barber_data}  from "../../barber_data.js"
+
 export const PrimaryContext = createContext()
 
 const PrimaryContextProvier = (props) => {

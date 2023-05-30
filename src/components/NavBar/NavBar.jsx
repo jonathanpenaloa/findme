@@ -25,7 +25,7 @@ function NavBar() {
         </>
       ) : (
         <>
-          <img src="https://cdn-icons-png.flaticon.com/512/1802/1802342.png" alt="img" />
+          {/* <img src="https://cdn-icons-png.flaticon.com/512/1802/1802342.png" alt="img" /> */}
           <p>Looking for a haircut?</p>
           <Link to="/Book">Book</Link>
           <div>
