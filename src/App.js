@@ -8,6 +8,7 @@ import DashBoard from './pages/DashDoard/DashBoard';
 import About from "./pages/About/About.jsx"
 import { Routes, Route } from "react-router-dom"; 
 import LogInPage from './pages/LogInPage/LogInPage';
+import Book from './pages/Book/Book';
 
 function App() {
    
@@ -30,7 +31,7 @@ function App() {
       <NavBar/>
         <Routes>
           <Route path='/' element={<DashBoard/> }/>
-          <Route path='/Book' />
+          <Route path='/Book' element={<Book />} />
           <Route path='/About' element={<About />}/>
           <Route path='/Login' element={<LogInPage/>}/>
         </Routes>

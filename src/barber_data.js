@@ -10,28 +10,32 @@ const availableTimeSlots = [
     { time: "5:00 PM", available: true }
   ];
   
-  export const provider_data = [
+  export const barber_data = [
     {
+      id: "A1B2C3D4E",
       name: "John Doe",
-      img: "john.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       availableTimeSlots: [...availableTimeSlots]
     },
     {
+      id: "F5G6H7I8J",
       name: "Jane Smith",
-      img: "jane.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Nulla facilisi. Mauris ac semper felis.",
       availableTimeSlots: [...availableTimeSlots]
     },
     {
+      id: "K9L0M1N2O",
       name: "Mike Johnson",
-      img: "mike.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
       availableTimeSlots: [...availableTimeSlots]
     },
     {
+      id: "P3Q4R5S6T",
       name: "Anna Williams",
-      img: "anna.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Etiam volutpat mauris id felis pellentesque, nec elementum nunc porttitor.",
       availableTimeSlots: [
         { time: "9:00 AM", available: false },
@@ -42,14 +46,16 @@ const availableTimeSlots = [
       ]
     },
     {
+      id: "U7V8W9X0Y",
       name: "Robert Davis",
-      img: "robert.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Fusce dignissim elit eget tortor auctor, et faucibus urna pretium.",
       availableTimeSlots: [...availableTimeSlots]
     },
     {
+      id: "Z1A2B3C4D",
       name: "Emily Wilson",
-      img: "emily.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
       availableTimeSlots: [
         { time: "10:00 AM", available: false },
@@ -60,20 +66,23 @@ const availableTimeSlots = [
       ]
     },
     {
+      id: "E5F6G7H8I",
       name: "David Thompson",
-      img: "david.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "In condimentum mauris eget volutpat scelerisque. Nam feugiat ante a elit vulputate, a vulputate est semper.",
       availableTimeSlots: [...availableTimeSlots]
     },
     {
+      id: "J9K0L1M2N",
       name: "Olivia Lee",
-      img: "olivia.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Curabitur laoreet arcu vel elit iaculis, vitae mattis risus hendrerit.",
       availableTimeSlots: [...availableTimeSlots]
     },
     {
+      id: "O3P4Q5R6S",
       name: "Samuel Wright",
-      img: "samuel.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Ut at finibus mauris. Fusce vehicula risus id tortor hendrerit, sed egestas quam tincidunt.",
       availableTimeSlots: [
         { time: "9:00 AM", available: true },
