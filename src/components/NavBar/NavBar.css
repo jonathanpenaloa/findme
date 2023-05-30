@@ -20,3 +20,10 @@
     border: 1px solid aliceblue;
 }
 
+p {
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+
+}
+

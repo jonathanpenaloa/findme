@@ -1,18 +1,39 @@
 import React from 'react'
 import "./NavBar.css"
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { PrimaryContext } from '../contexts/PrimaryContext'
+import LogoutButton from "../GoogleLogout/GoogleLogout";
 
 function NavBar() {
+
+  const { user } = useContext(PrimaryContext)
+
+
   return (
     <div className='nav-bar'>
-        <img src="https://lh3.googleusercontent.com/a/AAcHTtcTaGtGkAO1hw_hIhvaBsElgXCMUsdOsHn2RHTX=s96-c" alt="img" />
-        {/* Book link is going to be conditionaly render  */}
-        <Link to="/Book">Book</Link>
-        <div >
-            <Link to="/">Home</Link>
+      {user.name !== "" ? (
+        <>
+          <img src={user.img} alt="img" />
+          <p>Hi! {user.name}</p>
+          <Link to="/Book">Book</Link>
+            <div >
+              <Link to="/">Home</Link>
+              <Link to="/About">About</Link>
+            </div>
+          <LogoutButton />
+        </>
+      ) : (
+        <>
+          <img src="https://cdn-icons-png.flaticon.com/512/1802/1802342.png" alt="img" />
+          <p>Looking for a haircut?</p>
+          <Link to="/Book">Book</Link>
+          <div>
             <Link to="/About">About</Link>
-            <Link to="/Login">Login</Link>
-        </div>
+            <Link to="/Login">Log In</Link>
+          </div>
+        </>
+      )}
     </div>
   )
 }

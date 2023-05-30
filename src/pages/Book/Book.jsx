@@ -4,14 +4,15 @@ import { PrimaryContext } from "../../components/contexts/PrimaryContext";
 
 const Book = () => {
 
-const {serviceData, setServiceData} = useContext(PrimaryContext);
+const { serviceData, setServiceData} = useContext(PrimaryContext);
 
-console.log(serviceData)
-console.log(serviceData.availableTimeSlots)
+// console.log(serviceData)
+// console.log(serviceData.availableTimeSlots)
 
     const selectBarber = () => {
         console.log("hello")
     }
+
 
 let appoinments = serviceData.map((barber) => {
     console.log(barber.availableTimeSlots)

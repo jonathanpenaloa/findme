@@ -1,16 +1,17 @@
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import { gapi } from 'gapi-script';
-import LoginButton from "./components/GoogleLogIn/GoogleLogIn"
-import LogoutButton from "./components/GoogleLogout/GoogleLogout"
 import NavBar from './components/NavBar/NavBar';
 import DashBoard from './pages/DashDoard/DashBoard';
 import About from "./pages/About/About.jsx"
 import { Routes, Route } from "react-router-dom"; 
 import LogInPage from './pages/LogInPage/LogInPage';
 import Book from './pages/Book/Book';
+import { PrimaryContext } from './components/contexts/PrimaryContext';
 
 function App() {
+
+  const { user } = useContext(PrimaryContext)
    
   useEffect(() => {
     let clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID
@@ -26,11 +27,10 @@ function App() {
 
   return (
     <div className="App">
-      {/* <LoginButton /> */}
-      <LogoutButton />
       <NavBar/>
         <Routes>
-          <Route path='/' element={<DashBoard/> }/>
+          <Route path='/' element={<LogInPage/> }/>
+          <Route path='/DashBoard' element={<DashBoard/> }/>
           <Route path='/Book' element={<Book />} />
           <Route path='/About' element={<About />}/>
           <Route path='/Login' element={<LogInPage/>}/>
