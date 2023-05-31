@@ -6,13 +6,6 @@ import { useContext } from 'react';
 
 function GoogleLogIn() {
 
-    // const [user, setUser] = useState({
-    //     id: "",
-    //     name: "",
-    //     img: "",
-    //     email: ""
-    // });
-
     const { setUser } = useContext(PrimaryContext)
 
     const navigate = useNavigate()
