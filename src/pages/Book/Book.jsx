@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { PrimaryContext } from "../../components/contexts/PrimaryContext";
+import "./Book.css"
 
 
 const Book = () => {
@@ -15,12 +16,14 @@ const { serviceData } = useContext(PrimaryContext);
 let appoinments = serviceData.map((barber) => {
 
     return (
-        <div 
+        <div className="provider-card"
         onClick={selectBarber}
         key={barber.id}>
             <img src={barber.img_url} alt="profile" />
-            <h1>{barber.name}</h1>
-            <p>{barber.description}</p>
+            <div>
+                <h1>{barber.name}</h1>
+                <p>{barber.description}</p>
+            </div>
         </div>
     )
 })

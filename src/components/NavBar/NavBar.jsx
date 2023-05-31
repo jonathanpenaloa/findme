@@ -9,7 +9,6 @@ function NavBar() {
 
   const { user } = useContext(PrimaryContext)
 
-  console.log("This is nav comp", user);
 
   return (
     <div className='nav-bar'>
@@ -19,7 +18,7 @@ function NavBar() {
           <p>Hi! {user.name}</p>
           <Link to="/Book">Book</Link>
             <div >
-              <Link to="/">Home</Link>
+              <Link to="/DashBoard">Home</Link>
               <Link to="/About">About</Link>
             </div>
           <LogoutButton />

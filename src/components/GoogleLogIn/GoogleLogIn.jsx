@@ -12,7 +12,7 @@ function GoogleLogIn() {
 
     const onSuccess = async (res) => {
         let gd = await res.profileObj
-        console.log("google log in comp",gd)
+
         setUser({
             id: gd.googleId,
             name: gd.name,
