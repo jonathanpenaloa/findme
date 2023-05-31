@@ -6,7 +6,7 @@ import { useContext} from 'react';
 
 function GoogleLogIn() {
 
-    const { setUser } = useContext(PrimaryContext)
+    const { user, setUser, setUserApps } = useContext(PrimaryContext)
 
     const navigate = useNavigate()
 
@@ -19,6 +19,10 @@ function GoogleLogIn() {
             avatar: gd.imageUrl,
             email: gd.email
          })
+         let storedApps = localStorage.getItem(gd.googleId)
+         
+         if (storedApps) setUserApps(JSON.parse(storedApps))
+      
         // check localstore for prev apts
         // "as;dlfkj;lqwjer": [{}, {}, {}]
         // "as;dlfkj;lqwjer": [{}, {}, {}]

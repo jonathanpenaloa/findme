@@ -1,23 +1,26 @@
 import { useContext } from "react";
 import { PrimaryContext } from "../../components/contexts/PrimaryContext";
 import "./Book.css"
+import { useNavigate } from "react-router-dom";
 
 
 const Book = () => {
 
-const { serviceData } = useContext(PrimaryContext);
+    const navigate = useNavigate()
+const { serviceData, setSelectedProvider } = useContext(PrimaryContext);
 
 
-    const selectBarber = () => {
-        console.log("hello")
+    const selectBarber = (barber) => {
+        setSelectedProvider(barber)
+        navigate('/DashBoard');
     }
 
 
-let appoinments = serviceData.map((barber) => {
+let barbers = serviceData.map((barber) => {
 
     return (
         <div className="provider-card"
-        onClick={selectBarber}
+        onClick={() => selectBarber(barber)}
         key={barber.id}>
             <img src={barber.img_url} alt="profile" />
             <div>
@@ -31,7 +34,7 @@ let appoinments = serviceData.map((barber) => {
 
 return (
     <div>
-        {appoinments}
+        {barbers}
     </div>
 )
 }

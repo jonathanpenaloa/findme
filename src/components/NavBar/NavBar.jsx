@@ -12,7 +12,7 @@ function NavBar() {
 
   return (
     <div className='nav-bar'>
-      {user.name !== "" ? (
+      {user ? (
         <>
           <img src={user.avatar} alt="img" />
           <p>Hi! {user.name}</p>
@@ -27,7 +27,7 @@ function NavBar() {
           <p>Looking for a haircut?</p>
           <Link to="/Book">Book</Link>
           <Link to="/About">About</Link>
-          <Link to="/Login">Log In</Link>
+          <Link to="/">Log In</Link>
         </>
       )}
     </div>

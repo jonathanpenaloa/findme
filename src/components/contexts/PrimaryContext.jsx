@@ -12,23 +12,19 @@ const PrimaryContextProvier = (props) => {
         url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU"
     });
 
-    const [user, setUser] = useState({
-        id: "",
-        name: "",
-        avatar: "",
-        email: ""
-    });
+    const [user, setUser] = useState(null);
     
     const [avialableApps, setAvailabeApps] = useState([])
 
-    const [selectedProvider, setSelectedProvider] = useState([])
-
+    
     const [userApps, setUserApps] = useState([{
-        // id: String barber 
-        // time: time for app
+        id: "",
+        time: ""
     }])
-
+    
     const [serviceData, setServiceData] = useState(barber_data)
+    
+    const [selectedProvider, setSelectedProvider] = useState(serviceData[0])
 
     return (
         <PrimaryContext.Provider value={
