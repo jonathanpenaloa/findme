@@ -2,7 +2,7 @@ import React from 'react'
 import { GoogleLogin } from 'react-google-login'
 import { useNavigate } from "react-router-dom";
 import { PrimaryContext } from '../contexts/PrimaryContext';
-import { useContext } from 'react';
+import { useContext} from 'react';
 
 function GoogleLogIn() {
 
@@ -10,12 +10,13 @@ function GoogleLogIn() {
 
     const navigate = useNavigate()
 
-    const onSuccess = (res) => {
-        let gd = res.profileObj
+    const onSuccess = async (res) => {
+        let gd = await res.profileObj
+        console.log("google log in comp",gd)
         setUser({
-            id: gd.googleId ,
+            id: gd.googleId,
             name: gd.name,
-            img: gd.imageUrl,
+            avatar: gd.imageUrl,
             email: gd.email
          })
         // check localstore for prev apts

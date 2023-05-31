@@ -9,12 +9,13 @@ function NavBar() {
 
   const { user } = useContext(PrimaryContext)
 
+  console.log("This is nav comp", user);
 
   return (
     <div className='nav-bar'>
       {user.name !== "" ? (
         <>
-          <img src={user.img} alt="img" />
+          <img src={user.avatar} alt="img" />
           <p>Hi! {user.name}</p>
           <Link to="/Book">Book</Link>
             <div >
@@ -25,7 +26,7 @@ function NavBar() {
         </>
       ) : (
         <>
-          {/* <img src="https://cdn-icons-png.flaticon.com/512/1802/1802342.png" alt="img" /> */}
+          <img src="https://cdn-icons-png.flaticon.com/512/1802/1802342.png" alt="img" />
           <p>Looking for a haircut?</p>
           <Link to="/Book">Book</Link>
           <div>

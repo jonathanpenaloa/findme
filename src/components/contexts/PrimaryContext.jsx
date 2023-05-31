@@ -15,7 +15,7 @@ const PrimaryContextProvier = (props) => {
     const [user, setUser] = useState({
         id: "",
         name: "",
-        img: "",
+        avatar: "",
         email: ""
     });
     

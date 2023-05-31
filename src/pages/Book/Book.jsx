@@ -4,10 +4,8 @@ import { PrimaryContext } from "../../components/contexts/PrimaryContext";
 
 const Book = () => {
 
-const { serviceData, setServiceData} = useContext(PrimaryContext);
+const { serviceData } = useContext(PrimaryContext);
 
-// console.log(serviceData)
-// console.log(serviceData.availableTimeSlots)
 
     const selectBarber = () => {
         console.log("hello")
@@ -15,12 +13,12 @@ const { serviceData, setServiceData} = useContext(PrimaryContext);
 
 
 let appoinments = serviceData.map((barber) => {
-    console.log(barber.availableTimeSlots)
+
     return (
         <div 
         onClick={selectBarber}
         key={barber.id}>
-            <img src={barber.img} alt="profile-picture" />
+            <img src={barber.img_url} alt="profile" />
             <h1>{barber.name}</h1>
             <p>{barber.description}</p>
         </div>

@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useContext } from 'react';
+import { useEffect } from 'react';
 import { gapi } from 'gapi-script';
 import NavBar from './components/NavBar/NavBar';
 import DashBoard from './pages/DashDoard/DashBoard';
@@ -7,11 +7,9 @@ import About from "./pages/About/About.jsx"
 import { Routes, Route } from "react-router-dom"; 
 import LogInPage from './pages/LogInPage/LogInPage';
 import Book from './pages/Book/Book';
-import { PrimaryContext } from './components/contexts/PrimaryContext';
 
 function App() {
 
-  const { user } = useContext(PrimaryContext)
    
   useEffect(() => {
     let clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID
