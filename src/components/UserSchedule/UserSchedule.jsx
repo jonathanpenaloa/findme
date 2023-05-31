@@ -4,15 +4,18 @@ import { PrimaryContext } from '../contexts/PrimaryContext';
 
 const UserSchedule = ({userApps}) => {
 
- /// selevted p
   const {selectedProvider } = useContext(PrimaryContext)
-  // console.log(userApps);
+
+
   let myappoinments = userApps.map((apt, idx) => {
-    return <div key={JSON.stringify(apt) + idx}>{apt.time}</div>
+    if(selectedProvider.id === apt.id) {
+      return <div key={JSON.stringify(apt) + idx}>{apt.time}<button>X</button></div>
+    }
   });
 
   return (
     <div id='user-schedule'>
+      <h1>Your appointment times:</h1>
       {/* {userApps} */}
       {myappoinments}
     </div>
