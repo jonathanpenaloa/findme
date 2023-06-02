@@ -20,11 +20,15 @@ const UserSchedule = ({userApps, setUserApps}) => {
 
     if(selectedProvider.id === apt.id) {
       return (
-        <div key={JSON.stringify(apt) + idx}>
+        <div
+        key={JSON.stringify(apt) + idx}
+        >
+          <div  id='time-of-appointments'>
           {apt.time}
-          <button 
-          onClick={() => removeAppointment(apt.time)}
-          >cancel</button>
+            <button 
+            onClick={() => removeAppointment(apt.time)}> cancel
+            </button>
+          </div>
         </div>
       )
     }
@@ -32,8 +36,10 @@ const UserSchedule = ({userApps, setUserApps}) => {
 
   return (
     <div id='user-schedule'>
-      <h1>Your appointment times:</h1>
-      {myappoinments}
+      <h1>Your appointment with {selectedProvider.name}:</h1>
+      <div  className='user-app-calendar-times'>
+        {myappoinments}
+      </div>
     </div>
   )
 }

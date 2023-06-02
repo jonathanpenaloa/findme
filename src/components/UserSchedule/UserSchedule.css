@@ -1,3 +1,49 @@
 #user-schedule {
-    background-color: #50717b;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
+
+.user-app-calendar-times {
+    height: 100vh;
+    color: aliceblue;
+    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%)
+}
+
+#time-of-appointments {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+#time-of-appointments > button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f0ae05;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#time-of-appointments > button:hover {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: white;
+    color: #041e3a;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#time-of-appointments:hover {
+    border: 1px solid whitesmoke;
+    color: #000;
+    background-color: #007bff;
+    border: 1px;
+    transition: background-color 0.5s ease;
+}
+
