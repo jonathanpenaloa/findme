@@ -1,0 +1,14 @@
+#quick-book {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selected-barber-el {
+    border: 1px solid red;
+} 
+
+.appointment-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

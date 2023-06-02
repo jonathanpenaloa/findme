@@ -1,14 +1,9 @@
 .dashboard {
-    background-color: #8ecccc;
+  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-}
-
-#quick-book {
-  grid-area: 1 / 2 / 2 / 4;
-  background-color: #3a4042;
 }

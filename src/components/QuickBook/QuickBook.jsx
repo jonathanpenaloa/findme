@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { PrimaryContext } from '../contexts/PrimaryContext'
+import "./QuickBook.css"
 
 function QuickBook({selectedProvider}) {
 
