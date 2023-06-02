@@ -8,14 +8,10 @@ function QuickBook({selectedProvider}) {
   const pickTheTime = (e) => {
     let newUserApps = [...userApps, { id: selectedProvider.id, time: e.target.innerText }]
     setUserApps(newUserApps)
-    // console.log("Im adding appontments hopefully ", userApps)
     localStorage.setItem(user.id, JSON.stringify(newUserApps))
   }
 
   const [leftTimes, setLeftTimes] = useState([])
-
-  // avaible - lefTime = state
-  // filter availableTimeSlots (boolean => .some loop through userAps (check all useraps that have the barber's ID AND match the time))
 
   let youHaveTheseTimesToChooseFrom = selectedProvider.availableTimeSlots.filter((timeSlot) => {
 
@@ -27,7 +23,6 @@ function QuickBook({selectedProvider}) {
 
   })
 
-  console.log(youHaveTheseTimesToChooseFrom);
   let apps = youHaveTheseTimesToChooseFrom.map((timeBlock, idx) => {
     return (
       <button 

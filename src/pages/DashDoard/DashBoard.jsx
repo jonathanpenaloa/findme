@@ -9,22 +9,10 @@ const DashBoard = () => {
 
  const { userApps, setUserApps, serviceData, selectedProvider } = useContext(PrimaryContext);
   
-//  useEffect(() => {
-//     // chack loc store for user
-//     // if (tre) {
-//     //  setApp()
-//     // } else 
-//     // 
-//     if (window.localStorage.getItem()) {
-//       localStoreObj ={
-//         userId: [{barberId, slot}, {barberId, slot}]
-//       }
-//     }
-//   }, []);
 
   return (
     <div className="dashboard">
-      <UserSchedule userApps={userApps}/>
+      <UserSchedule userApps={userApps} setUserApps={setUserApps} />
       <QuickBook selectedProvider={selectedProvider}/>
     </div>
   );

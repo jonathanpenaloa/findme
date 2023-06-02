@@ -26,15 +26,6 @@ let barbers = serviceData.map((barber) => {
     barber={barber}
     description={barber.description} 
     url={barber.img_url} />
-                  // <div className="card"
-        // onClick={() => selectBarber(barber)}
-        // key={barber.id}>
-        //     <img src={barber.img_url} alt="profile" />
-        //     <div className="card-info">
-        //         <h1>{barber.name}</h1>
-        //         <p>{barber.description}</p>
-        //     </div>
-                // </div>
     })
 
 

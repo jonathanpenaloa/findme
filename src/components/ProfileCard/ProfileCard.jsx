@@ -12,7 +12,7 @@ const ProfileCard = ( { name, selectBarber, description, url, barber } ) => {
         <div className="card-content">
           <div className="card-title">{name}</div>
           <div className="card-text">{description}</div>
-          <button onClick={() => selectBarber(barber)} className="card-button">see my appointments</button>
+          <button onClick={() => selectBarber(barber)} className="card-button">Book an Appoinment</button>
         </div>
       </div>
     )
