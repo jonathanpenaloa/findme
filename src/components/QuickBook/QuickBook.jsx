@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { PrimaryContext } from '../contexts/PrimaryContext'
 
 function QuickBook({selectedProvider}) {
@@ -12,16 +12,23 @@ function QuickBook({selectedProvider}) {
     localStorage.setItem(user.id, JSON.stringify(newUserApps))
   }
 
-  // const [leftTimes, setLeftTimes] = useState([])
+  const [leftTimes, setLeftTimes] = useState([])
 
   // avaible - lefTime = state
   // filter availableTimeSlots (boolean => .some loop through userAps (check all useraps that have the barber's ID AND match the time))
 
-  // youHaveTheseTimesToChooseFrom = selectedProvider.availableTimeSlots.filter((timeSlots) => {
-  //   // 
-  // })
+  let youHaveTheseTimesToChooseFrom = selectedProvider.availableTimeSlots.filter((timeSlot) => {
 
-  let apps = selectedProvider.availableTimeSlots.map((timeBlock, idx) => {
+   return !userApps.some((apt) => {
+    let bolean = selectedProvider.id === apt.id && timeSlot.time === apt.time
+    return bolean;
+    })
+
+
+  })
+
+  console.log(youHaveTheseTimesToChooseFrom);
+  let apps = youHaveTheseTimesToChooseFrom.map((timeBlock, idx) => {
     return (
       <button 
         onClick={pickTheTime}
