@@ -13,13 +13,13 @@
 }
   
   .card-image {
-    width: 200px; /* Set the width to 50px */
-    height: 200px; /* Set the height to 50px */
-    object-fit: cover; /* Ensure the image fills the container */
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
 }
   
   .card-content {
-    flex-grow: 1; /* Allow the content to grow and fill the remaining space */
+    flex-grow: 1; 
     padding: 16px;
     background-color: #fff;
 }
