@@ -16,6 +16,7 @@ const availableTimeSlots = [
       name: "John Doe",
       img_url: "https://media.licdn.com/dms/image/D4D03AQHpHrrTsq3W3A/profile-displayphoto-shrink_200_200/0/1680745629794?e=1691020800&v=beta&t=NqC0Hcch2MH-8Wd9osHpijxiVdtCXnW4u6k7opqLrHg",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2008", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [...availableTimeSlots]
     },
     {
@@ -23,6 +24,7 @@ const availableTimeSlots = [
       name: "Jane Smith",
       img_url: "https://media.licdn.com/dms/image/C4E03AQE97dA_EX8gEw/profile-displayphoto-shrink_200_200/0/1563207253846?e=1691020800&v=beta&t=U7FCV01GDxAMWOwbIiu6hMc5yE6_ydKd3j2LL2Tl2KE",
       description: "Nulla facilisi. Mauris ac semper felis.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2005", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [...availableTimeSlots]
     },
     {
@@ -30,6 +32,7 @@ const availableTimeSlots = [
       name: "Trim Tri",
       img_url: "https://media.licdn.com/dms/image/D5603AQEkFImpse-4HQ/profile-displayphoto-shrink_200_200/0/1680743793699?e=1691020800&v=beta&t=1pDHrhiP1z4RVof1asJYlisrlvhjEdz34GFVuHZtrhE",
       description: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2008", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [...availableTimeSlots]
     },
     {
@@ -37,6 +40,7 @@ const availableTimeSlots = [
       name: "Chase V",
       img_url: "https://media.licdn.com/dms/image/C5603AQGNwD3yDE35iA/profile-displayphoto-shrink_800_800/0/1659022635083?e=1691020800&v=beta&t=5YWDrWog0LMggyTdDPh_IchyQ0fnYcYgg4AVEzBuQfY",
       description: "Etiam volutpat mauris id felis pellentesque, nec elementum nunc porttitor.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2008", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [
         { time: "9:00 AM", available: false },
         { time: "11:00 AM", available: true },
@@ -50,6 +54,7 @@ const availableTimeSlots = [
       name: "JSON",
       img_url: "https://ca.slack-edge.com/T04411PBUN8-U04UMR22QQY-407082c1cffe-512",
       description: "Fusce dignissim elit eget tortor auctor, et faucibus urna pretium.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2008", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [...availableTimeSlots]
     },
     {
@@ -57,6 +62,7 @@ const availableTimeSlots = [
       name: "Emily Wilson",
       img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2008", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [
         { time: "10:00 AM", available: false },
         { time: "11:00 AM", available: false },
@@ -70,6 +76,7 @@ const availableTimeSlots = [
       name: "David Thompson",
       img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "In condimentum mauris eget volutpat scelerisque. Nam feugiat ante a elit vulputate, a vulputate est semper.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2008", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [...availableTimeSlots]
     },
     {
@@ -77,6 +84,7 @@ const availableTimeSlots = [
       name: "Olivia Lee",
       img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Curabitur laoreet arcu vel elit iaculis, vitae mattis risus hendrerit.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2008", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [...availableTimeSlots]
     },
     {
@@ -84,6 +92,7 @@ const availableTimeSlots = [
       name: "Samuel Wright",
       img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnb_I_OQt7Mcts15Kf9qwVchNCE7SJlkfYQ&usqp=CAU",
       description: "Ut at finibus mauris. Fusce vehicula risus id tortor hendrerit, sed egestas quam tincidunt.",
+      bio: {age: 23, location: "Seattle", about: "Barber Since 2008", story: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt aliquam rem necessitatibus magnam quisquam, culpa eos amet consequatur quos voluptates dignissimos, soluta vero numquam laudantium velit repudiandae ducimus alias nostrum" },
       availableTimeSlots: [
         { time: "9:00 AM", available: true },
         { time: "10:00 AM", available: true },

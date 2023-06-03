@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { PrimaryContext } from '../contexts/PrimaryContext'
 import "./QuickBook.css"
+import BarberBio from '../BarberBio/BarberBio'
 
 function QuickBook({selectedProvider}) {
 
@@ -42,7 +43,7 @@ function QuickBook({selectedProvider}) {
   return (
     <div id='quick-book'>
       <div className="selected-barber-el">
-        {selectedProvider.name}
+        <BarberBio selectedProvider={selectedProvider}/>
       </div>
       <div className="appointment-window">
         {apps}
