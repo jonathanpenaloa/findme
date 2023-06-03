@@ -9,7 +9,6 @@ const BarberBio = ( { selectedProvider } ) => {
             src={selectedProvider.img_url}
             alt="profile-image"
           />
-          <div className="card-title">{selectedProvider.name}</div>
           <div className="card-text">{selectedProvider.description}</div>
           <div>{selectedProvider.bio.about}</div>
           <p>{selectedProvider.bio.story}</p>

@@ -36,8 +36,8 @@ const UserSchedule = ({userApps, setUserApps}) => {
 
   return (
     <div id='user-schedule'>
-      <h1>Your appointment with {selectedProvider.name}:</h1>
-      <div  className='user-app-calendar-times'>
+      <div className='user-app-calendar-times'>
+      <div>Your appointment with {selectedProvider.name}:</div>
         {myappoinments}
       </div>
     </div>
