@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# FindMe 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Appoinment Booking app
 
-## Available Scripts
+## Login Page: 
 
-In the project directory, you can run:
+<img src="https://i.imgur.com/NmITKYv.png">
 
-### `npm start`
+## User DashBoard:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://i.imgur.com/UbhK84Z.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Available Barber:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://i.imgur.com/oHHO3Od.png">
 
-### `npm run build`
+### Technologies Used: 
+- #### HTML 
+- #### CSS
+- #### JavaScript 
+- #### Google API
+- #### Google Fonts
+- #### Imgur
+- #### React
+- #### React Hooks
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[FindMe](https://jonathanpenaloa.github.io/poke_memory_game/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### 1. User can log in using google account to auto import user information
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- #### 2. User can look at their current appintments 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- #### 3. A Login User can visit the Book page to see the available barbers
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- #### 4. User can select a barber from the list and look at their appointments
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- #### 5. User can book and available appoinment that will add the appoitment to their schedule
 
-## Learn More
+- #### 6. Users can logout and the appointments will be stored in memory
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future enhancements:
 
-### Code Splitting
+- #### Add a backend to store information to a database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- #### Include calandar dates that will show on user google calandar 
