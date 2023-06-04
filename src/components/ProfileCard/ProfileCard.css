@@ -60,12 +60,12 @@ button:hover {
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: box-shadow 0.3s ease;
-        width: 390px;
+        width: auto;
+        max-height: 200px;
     }
 
     .card-image {
         object-fit: cover; 
-        height: 100px;
     }
 
     .card-button {

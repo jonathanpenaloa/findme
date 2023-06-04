@@ -6,8 +6,7 @@
 .selected-barber-el {
     border: 1px solid;
     border-radius: 20px;
-    background-color: aliceblue;
-    margin: 10px;
+    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%)
 } 
 
 .appointment-window {
