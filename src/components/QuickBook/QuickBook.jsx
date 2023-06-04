@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { PrimaryContext } from '../contexts/PrimaryContext'
 import "./QuickBook.css"
 import BarberBio from '../BarberBio/BarberBio'
@@ -12,8 +12,6 @@ function QuickBook({selectedProvider}) {
     setUserApps(newUserApps)
     localStorage.setItem(user.id, JSON.stringify(newUserApps))
   }
-
-  const [leftTimes, setLeftTimes] = useState([])
 
   let youHaveTheseTimesToChooseFrom = selectedProvider.availableTimeSlots.filter((timeSlot) => {
 
@@ -46,6 +44,7 @@ function QuickBook({selectedProvider}) {
         <BarberBio selectedProvider={selectedProvider}/>
       </div>
       <div className="appointment-window">
+        available appointments:
         {apps}
       </div>
     </div>
