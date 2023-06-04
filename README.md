@@ -26,9 +26,6 @@
 - #### React Hooks
 
 
-[FindMe](https://jonathanpenaloa.github.io/poke_memory_game/)
-
-
 #### 1. User can log in using google account to auto import user information
 
 - #### 2. User can look at their current appintments 
