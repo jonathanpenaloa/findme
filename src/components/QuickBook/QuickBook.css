@@ -5,6 +5,9 @@
 
 .selected-barber-el {
     border: 1px solid;
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin: 10px;
 } 
 
 .appointment-window {

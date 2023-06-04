@@ -5,7 +5,7 @@ const BarberBio = ( { selectedProvider } ) => {
     return (
         <div className="barber-card-bio">
           <img
-            className="card-image"
+            id="bio-img"
             src={selectedProvider.img_url}
             alt="profile-image"
           />

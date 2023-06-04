@@ -15,7 +15,7 @@ function NavBar() {
       {user ? (
         <>
           <img src={user.avatar} alt="img" />
-          <p>Hi! {user.name}</p>
+          <h4>Hi! {user.name}</h4>
           <Link to="/Book">Book</Link>
           <Link to="/DashBoard">Home</Link>
           <Link to="/About">About</Link>
@@ -24,7 +24,7 @@ function NavBar() {
       ) : (
         <>
           <img src="https://cdn-icons-png.flaticon.com/512/1802/1802342.png" alt="img" />
-          <p>Looking for a haircut?</p>
+          <h4>Looking for a haircut?</h4>
           <Link to="/Book">Book</Link>
           <Link to="/About">About</Link>
           <Link to="/">Log In</Link>

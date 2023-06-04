@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     overflow: hidden;
-    /* width: 100vw; */
     padding: 5px;
     height: 35px;
     background-color: #212121;
@@ -12,7 +11,6 @@
     height: 100%;
     color: aliceblue;
     text-decoration: none;
-    /* font-size: 25px; */
 }
 
 .nav-bar img {
@@ -20,11 +18,10 @@
     border: 1px solid aliceblue;
 }
 
-p {
+.anv-bar h4 {
     display: flex;
     color: aliceblue;
     align-items: center;
-
 }
 
 @media only screen and (max-width: 500px)  {
