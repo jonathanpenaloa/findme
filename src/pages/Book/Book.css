@@ -4,7 +4,8 @@ grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 10px;
 grid-row-gap: 10px;
-padding: 30px;
+padding-top: 50px;
+padding-bottom: 50px;
 }
 
 
@@ -16,7 +17,8 @@ padding: 30px;
         grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
-        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         }
 }
 @media only screen and (max-width: 800px)  {
@@ -25,16 +27,16 @@ padding: 30px;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
-        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
-@media only screen and (max-width: 390px)  {
+@media only screen and (max-width: 700px)  {
     .provider-card-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
-        margin: 20px;
     }
 
     .card {
@@ -46,9 +48,17 @@ padding: 30px;
     }
 
     .card-image {
-        width: 100px; 
-        height: 100px; 
+        width: 50px; 
+        height: 50px; 
         object-fit: cover; 
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    h4 {
+        height: 10px;
     }
 }
 

@@ -1,0 +1,16 @@
+.about-me {
+    height: 100vh;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802342.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-info-about {
+    position: absolute;
+    padding: 30px;
+    font-size: 20px;
+}
