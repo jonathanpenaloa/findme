@@ -19,7 +19,7 @@ function googleLogout() {
       img: "",
       email: ""
     })
-    navigate('/');
+    navigate('/findme/');
   }
   
   const logoutFailure = (res) => {

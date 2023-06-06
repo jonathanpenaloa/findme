@@ -32,7 +32,7 @@ function GoogleLogIn() {
         // "as;dlfkj;lqwjer": [{}, {}, {}]
         // if yes,  setUserApts(found array)
         // if no, do nothing
-        navigate("/DashBoard")
+        navigate("/findme/DashBoard")
     }
 
 
