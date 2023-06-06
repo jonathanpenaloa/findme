@@ -14,7 +14,7 @@ const { serviceData, setSelectedProvider } = useContext(PrimaryContext);
 
 const selectBarber = (barber) => {
     setSelectedProvider(barber)
-    navigate('/DashBoard');
+    navigate('/findme/DashBoard');
 }
 
 let barbers = serviceData.map((barber) => {

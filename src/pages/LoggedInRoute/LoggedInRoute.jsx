@@ -7,7 +7,7 @@ function LoggedInRoute({ Component, ...rest }) {
 
     const {user} = useContext(PrimaryContext)
   return (
-    <>{user ? <Component/> : <Navigate to="/" />}</>
+    <>{user ? <Component/> : <Navigate to="/findme/" />}</>
   )
 }
 
