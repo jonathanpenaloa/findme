@@ -4,7 +4,7 @@ import { gapi } from 'gapi-script';
 import NavBar from './components/NavBar/NavBar';
 import DashBoard from './pages/DashDoard/DashBoard';
 import About from "./pages/About/About.jsx"
-import { Routes, Route } from "react-router-dom"; 
+import { Routes, Route, Navigate } from "react-router-dom"; 
 import LogInPage from './pages/LogInPage/LogInPage';
 import Book from './pages/Book/Book';
 import LoggedInRoute from './pages/LoggedInRoute/LoggedInRoute';
@@ -33,6 +33,7 @@ function App() {
           <Route path='/DashBoard' element={<LoggedInRoute Component={DashBoard}/>}/>
           <Route path='/Book'  element={<LoggedInRoute Component={Book}/>}/>
           <Route path='/About'  element={<About/>}/>
+          <Route path='/*'  element={<Navigate to="/"/>}/>
         </Routes>
     </div>
   )
