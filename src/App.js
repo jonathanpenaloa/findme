@@ -29,11 +29,11 @@ function App() {
     <div className="App">
       <NavBar/>
         <Routes>
-          <Route path='/' element={<LogInPage/>}/>
-          <Route path='/DashBoard' element={<LoggedInRoute Component={DashBoard}/>}/>
-          <Route path='/Book'  element={<LoggedInRoute Component={Book}/>}/>
-          <Route path='/About'  element={<About/>}/>
-          <Route path='/*'  element={<Navigate to="/"/>}/>
+          <Route path='/findme/' element={<LogInPage/>}/>
+          <Route path='/findme/DashBoard' element={<LoggedInRoute Component={DashBoard}/>}/>
+          <Route path='/findme/Book'  element={<LoggedInRoute Component={Book}/>}/>
+          <Route path='/findme/About'  element={<About/>}/>
+          <Route path='/*'  element={<Navigate to="/findme/"/>}/>
         </Routes>
     </div>
   )
