@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/findme/static/css/main.7ae9f510.css",
-    "main.js": "/findme/static/js/main.5b2e1ed9.js",
+    "main.js": "/findme/static/js/main.3388d344.js",
     "index.html": "/findme/index.html",
     "main.7ae9f510.css.map": "/findme/static/css/main.7ae9f510.css.map",
-    "main.5b2e1ed9.js.map": "/findme/static/js/main.5b2e1ed9.js.map"
+    "main.3388d344.js.map": "/findme/static/js/main.3388d344.js.map"
   },
   "entrypoints": [
     "static/css/main.7ae9f510.css",
-    "static/js/main.5b2e1ed9.js"
+    "static/js/main.3388d344.js"
   ]
 }
